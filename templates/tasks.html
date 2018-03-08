@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="jumbotron text-center">
+        <h1>Tasks </h1>
+    </div>
+    <ul class="list-group">
+        {% for curTask in tasks %}
+            <li class="list-group-item">
+                <a href="/task/{{curTask.id}}">{{curTask.title}}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

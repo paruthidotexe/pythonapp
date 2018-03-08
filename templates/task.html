@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}    
+    <div class="jumbotron text-center">
+        <h1>Task : {{task.title}}</h1>
+    </div>
+    <div>
+        <ul class="list-group">
+            <li class="list-group-item">
+                {{task.desc}}
+            </li>
+        </ul>
+    </div>
+
+{% endblock %}
